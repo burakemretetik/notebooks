@@ -4,6 +4,7 @@ import os
 import textwrap
 import json
 
+api_key = st.secrets["cohere"]["api_key"]
 # Set up Cohere client
 co = cohere.Client(os.environ["COHERE_API_KEY"]) # Get your API key: https://dashboard.cohere.com/api-keys
 
